@@ -1,2 +1,2 @@
-# DLS
-Lip and eyebrow detection from didimo scans.
+# DIDIMO lips segmentation
+install and Infer yolo models
