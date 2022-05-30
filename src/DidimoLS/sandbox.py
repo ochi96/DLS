@@ -1,9 +1,10 @@
 import os
-
+import sys
 import cv2
 from segmentation import SegmentFace
 from processor import ImageProcessor
 
+sys.path.append(os.path.dirname(__file__))
 
 def segment_lips(image_path):
     (cropped_face, processed_face) = ImageProcessor(image_path).run()
@@ -18,5 +19,4 @@ def segment_lips(image_path):
 if __name__ == '__main__':
     image_path = "lol0.png"
     segment_lips(image_path)
-    # os.remove('cropped.png')
 

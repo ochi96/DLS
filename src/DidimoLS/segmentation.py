@@ -7,9 +7,10 @@ from PIL import Image
 
 import torch
 import torchvision.transforms as transforms
-
-
 from model import BiSeNet
+
+file_dir = os.path.dirname(__file__)
+
 
 class SegmentFace(object):
 	def __init__(self, original_image_path, cropped_image_path, processed_image_path) -> None:
@@ -20,7 +21,7 @@ class SegmentFace(object):
 						'lower_lip': 13,
 						'left_eyebrow': 2,
 						'right_eyebrow': 3}
-		self.__cp = 'models/79999_iter.pth'
+		self.__cp = file_dir + '/models/79999_iter.pth'
 		self.__segmentation_color = [0, 200, 200]
 		self.__mask_background_color = (255, 255, 255)
 		self.__n_classes = 19

@@ -5,7 +5,6 @@ setup.cfg
 setup.py
 src/DidimoLS/__init__.py
 src/DidimoLS/face_type.py
-src/DidimoLS/image_preprocessing.py
 src/DidimoLS/model.py
 src/DidimoLS/processor.py
 src/DidimoLS/resnet.py
@@ -17,5 +16,3 @@ src/DidimoLS.egg-info/SOURCES.txt
 src/DidimoLS.egg-info/dependency_links.txt
 src/DidimoLS.egg-info/requires.txt
 src/DidimoLS.egg-info/top_level.txt
-src/DidimoLS/models/79999_iter.pth
-src/DidimoLS/models/resnet18.pth

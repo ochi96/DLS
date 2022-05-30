@@ -1,9 +1,11 @@
 #!/usr/bin/python
 # -*- encoding: utf-8 -*-
-
+import os
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+
+file_dir = os.path.dirname(__file__)
 
 def conv3x3(in_planes, out_planes, stride=1):
     """3x3 convolution with padding"""
@@ -74,7 +76,7 @@ class Resnet18(nn.Module):
         return feat8, feat16, feat32
 
     def init_weight(self):
-        state_dict = torch.load('models/resnet18.pth')
+        state_dict = torch.load(file_dir + '/models/resnet18.pth')
         self_state_dict = self.state_dict()
         for k, v in state_dict.items():
             if 'fc' in k: continue

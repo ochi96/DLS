@@ -3,7 +3,7 @@ from sys import platform
 
 setup(
     name='DidimoLS',
-    version='0.4',
+    version='0.6',
     license='MIT',
     author="Bramwel Ochieng",
     author_email='bramwelochieng@gmail.com',
