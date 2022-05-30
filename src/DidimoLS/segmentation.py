@@ -10,7 +10,6 @@ import torchvision.transforms as transforms
 
 
 from model import BiSeNet
-# from image_preprocessing import ProcessImage
 
 class SegmentFace(object):
 	def __init__(self, original_image_path, cropped_image_path, processed_image_path) -> None:

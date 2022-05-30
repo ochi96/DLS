@@ -140,7 +140,7 @@ class ImageProcessor():
             # #     # print(self.recolored_image)
             #     self.recolored_image = cv2.adaptiveThreshold(self.recolored_image, 80, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 3, 3)
                 # cv2.imwrite("rec_gray.png", self.recolored_image)
-        print(self.face_type)
+            print(self.face_type)
         return self.recolored_image
  
     def get_face_type(self):

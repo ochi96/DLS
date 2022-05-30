@@ -62,7 +62,7 @@ def categorize_image(image):
 if __name__ == '__main__':
     image_path = f"images/originals/lol4.png"
     flag = categorize_image(image_path)
-    print(flag)
+    # print(flag)
     pass
 
 

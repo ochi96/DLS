@@ -1,5 +1,6 @@
 Pillow
 numpy
 opencv_python
-torch>=1.7.0
+torch
 torchvision
+wheel
